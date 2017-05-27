@@ -113,9 +113,10 @@ def curses_main(scr, interval, typing, escape, noframe):
                     prev_key = curr_key
                 else:
                     time.sleep(interval)
-                scr.addstr(OVERALL_Y + y, OVERALL_X + x, uc.encode(code))
-                scr.addstr(OVERALL_Y + MOKUGYO_Y, OVERALL_X + MOKUGYO_X, \
-                  MOKUGYO[cnt % len(MOKUGYO)].encode(code))
+                if uc != u'　':
+                    scr.addstr(OVERALL_Y + y, OVERALL_X + x, uc.encode(code))
+                    scr.addstr(OVERALL_Y + MOKUGYO_Y, OVERALL_X + MOKUGYO_X, \
+                      MOKUGYO[cnt % len(MOKUGYO)].encode(code))
                 scr.refresh()
                 y += 1
                 cnt += 1
