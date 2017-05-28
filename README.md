@@ -54,7 +54,7 @@ $ pip install click  # clickのインストール
 
 例えば「bashを起動する度に写経したい！」という熱心な人は
 ```
-$ echo 'shakyo --typing' >> .bashrc
+$ echo 'shakyo.py --typing' >> ~/.bashrc
 ```
 を実行しましょう。(これはジョークですよ。)
 
