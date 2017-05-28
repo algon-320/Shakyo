@@ -1,4 +1,4 @@
-Shakyo v1.0
+Shakyo v1.1
 ====
 
 Do "Shakyo" on your terminal.
